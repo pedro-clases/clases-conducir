@@ -23,21 +23,32 @@ body {
 }
 
 .hero img.profile {
-    width:140px;
-    height:140px;
+    display:block;
+    margin:0 auto 25px auto;
+    width:150px;
+    height:150px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid white;
-    box-shadow:0 8px 20px rgba(0,0,0,0.25);
-    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .hero img.banner {
-    max-width:240px;
-    margin-bottom:20px;
+    display:block;
+    margin:0 auto 20px auto;
+    max-width:260px;
 }
 
-.hero h1 { font-size:2.4em; margin-bottom:10px; }
+.hero h1 {
+    font-size:2em;
+    margin-top:15px;
+}
+
+.hero p {
+    margin-top:15px;
+    font-size:1.1em;
+    opacity:0.95;
+}
 
 .cta-button {
     display:inline-block;
@@ -47,6 +58,7 @@ body {
     border-radius:50px;
     text-decoration:none;
     font-weight:600;
+    margin-top:25px;
     transition:.3s ease;
 }
 
@@ -149,7 +161,7 @@ footer {
 }
 
 @media(max-width:768px){
-    .hero h1 { font-size:1.8em; }
+    .hero h1 { font-size:1.6em; }
 }
 </style>
 </head>
@@ -157,11 +169,16 @@ footer {
 <body>
 
 <div class="hero">
+
     <img src="Pedro-foto.jpg.JPG" class="profile" alt="Pedro Instructor">
-    <img src="titulo.jpg" class="banner" alt="Título">
-    <h1>Pedro – Instructor Titulado DGT</h1>
-    <p>Recupera la seguridad y confianza al volante</p>
+    <img src="titulo.jpg" class="banner" alt="Título Pedro">
+
+    <h1>Instructor Titulado por la Dirección General de Tráfico (DGT)</h1>
+
+    <p>Recupera la seguridad y confianza al volante con un método profesional y personalizado</p>
+
     <a href="#contacto" class="cta-button">Reservar Clases</a>
+
 </div>
 
 <div class="container">
@@ -182,13 +199,12 @@ pero que necesitan recuperar confianza, eliminar miedos o mejorar su seguridad a
 </div>
 </div>
 
-
 <div class="section">
 <h2>Sobre Pedro</h2>
 <div class="card">
 <p>
-Con años de experiencia como instructor de conducción y profesor titulado por la Dirección General de Tráfico (DGT), 
-me especializo en ayudar a conductores que sienten miedo, inseguridad o bloqueo al volante.
+Con años de experiencia como instructor de conducción, me especializo en ayudar a conductores 
+que sienten miedo, inseguridad o bloqueo al volante.
 </p>
 
 <p style="margin-top:20px;">
@@ -197,12 +213,11 @@ o largos periodos sin conducir.
 </p>
 
 <p style="margin-top:20px;">
-Mi método se basa en la paciencia, claridad y práctica en situaciones reales. 
-El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
+Mi método se basa en la paciencia, claridad y práctica en situaciones reales.
+El objetivo no es solo conducir, sino hacerlo con seguridad y tranquilidad.
 </p>
 </div>
 </div>
-
 
 <div class="section">
 <h2>Cómo son las clases</h2>
@@ -231,7 +246,6 @@ El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
 </div>
 </div>
 
-
 <div class="section">
 <h2>Lo que dicen mis alumnos</h2>
 
@@ -252,7 +266,6 @@ El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
 
 </div>
 
-
 <div class="section">
 <h2>Tarifas</h2>
 <div class="price-box">
@@ -263,7 +276,6 @@ El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
 </div>
 </div>
 
-
 <div class="section contact" id="contacto">
 <h2>Contacto</h2>
 <p>Agenda tus clases y empieza a conducir con seguridad.</p>
@@ -273,13 +285,13 @@ El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
 📧 <strong>ampuerodp@hotmail.com</strong>
 </div>
 
-<a href="tel:+34639167489" class="cta-button" style="margin-top:20px;">Llamar Ahora</a>
+<a href="tel:+34639167489" class="cta-button">Llamar Ahora</a>
 </div>
 
 </div>
 
 <footer>
-© 2026 Pedro – Profesor Titulado por la Dirección General de Tráfico (DGT)
+© 2026 Pedro – Profesor Titulado DGT
 </footer>
 
 </body>

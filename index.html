@@ -1,266 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro - Instructor de Conducción</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .hero p {
-            font-size: 1.3em;
-            opacity: 0.95;
-            margin-bottom: 30px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: transform 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-        
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        
-        .section {
-            margin-bottom: 60px;
-        }
-        
-        h2 {
-            color: #667eea;
-            font-size: 2.2em;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .feature-card {
-            background: #f8f9ff;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-        
-        .feature-card h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-        
-        .about {
-            background: #f8f9ff;
-            padding: 50px;
-            border-radius: 20px;
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        
-        .testimonials {
-            background: white;
-        }
-        
-        .testimonial {
-            background: #f8f9ff;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .testimonial p {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-        
-        .testimonial-author {
-            text-align: right;
-            color: #667eea;
-            font-weight: 600;
-        }
-        
-        .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-radius: 20px;
-        }
-        
-        .contact h2 {
-            color: white;
-        }
-        
-        .contact-info {
-            font-size: 1.3em;
-            margin-top: 20px;
-        }
-        
-        .contact-button {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #333;
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro - Instructor de Conducción</title>
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f7ff;
+    color:#333;
+    line-height:1.6;
+}
+
+.hero {
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    color:white;
+    text-align:center;
+    padding:100px 20px 80px;
+}
+
+.hero img.profile {
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    margin-bottom:20px;
+}
+
+.hero img.banner {
+    max-width:240px;
+    margin-bottom:20px;
+}
+
+.hero h1 { font-size:2.4em; margin-bottom:10px; }
+
+.cta-button {
+    display:inline-block;
+    background:white;
+    color:#667eea;
+    padding:14px 36px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.cta-button:hover {
+    background:#eaeaff;
+    transform:translateY(-3px);
+}
+
+.container {
+    max-width:1100px;
+    margin:0 auto;
+    padding:60px 20px;
+}
+
+.section { margin-bottom:70px; }
+
+h2 {
+    text-align:center;
+    color:#667eea;
+    margin-bottom:30px;
+    font-size:2em;
+}
+
+.card {
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.features {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.feature-card {
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    transition:.3s;
+}
+
+.feature-card:hover { transform:translateY(-6px); }
+
+.highlight-box {
+    background:#eef0ff;
+    padding:20px;
+    border-radius:12px;
+    margin-top:25px;
+    font-weight:600;
+}
+
+.price-box {
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.price-box h3 {
+    font-size:2.5em;
+    margin-bottom:10px;
+}
+
+.testimonial {
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    border-left:5px solid #667eea;
+}
+
+.testimonial-author {
+    text-align:right;
+    color:#667eea;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.contact {
+    text-align:center;
+    margin-top:40px;
+}
+
+.contact-info {
+    font-size:1.2em;
+    margin-top:15px;
+}
+
+footer {
+    text-align:center;
+    padding:25px;
+    background:#333;
+    color:white;
+}
+
+@media(max-width:768px){
+    .hero h1 { font-size:1.8em; }
+}
+</style>
 </head>
+
 <body>
-    <div class="hero">
-        <h1>🚗 Pedro - Tu Instructor de Confianza</h1>
-        <p>Aprende a conducir sin miedo, con paciencia y experiencia</p>
-        <a href="#contacto" class="cta-button">Reserva tu Clase</a>
-    </div>
-    
-    <div class="container">
-        <div class="section">
-            <h2>¿Por qué elegir a Pedro?</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Experiencia Comprobada</h3>
-                    <p>Años ayudando a personas a superar sus miedos al volante y obtener su licencia con confianza.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Especialista en Miedos</h3>
-                    <p>Método probado para eliminar el miedo al volante. Avanzamos a tu ritmo, sin presiones.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⏰</div>
-                    <h3>Horarios Flexibles</h3>
-                    <p>Adaptamos las clases a tu disponibilidad. Mañanas, tardes, fines de semana. Tú decides.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Paciencia Infinita</h3>
-                    <p>Entiendo que cada persona aprende diferente. Sin gritos, sin estrés. Solo apoyo constante.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Sobre Pedro</h2>
-            <div class="about">
-                <p>
-                    Con años de experiencia como instructor de conducción, me especializo en ayudar a personas que sienten miedo o inseguridad al volante. 
-                    He trabajado con estudiantes de todas las edades y niveles, desde principiantes absolutos hasta quienes necesitan recuperar la confianza 
-                    después de una mala experiencia.
-                </p>
-                <p style="margin-top: 20px;">
-                    Mi método se basa en la paciencia, la comprensión y el avance gradual. No hay dos estudiantes iguales, por eso personalizo cada clase 
-                    según tus necesidades específicas. Mi objetivo no es solo que apruebes el examen, sino que te sientas seguro y confiado al conducir.
-                </p>
-                <p style="margin-top: 20px;">
-                    <strong>Clases disponibles:</strong> Principiantes | Perfeccionamiento | Superación del miedo | Preparación para examen | Conducción en ciudad | Autopista
-                </p>
-            </div>
-        </div>
-        
-        <div class="section testimonials">
-            <h2>Lo que dicen mis alumnos</h2>
-            <div class="testimonial">
-                <p>"Tenía pánico a conducir después de un accidente. Pedro fue increíblemente paciente y en pocas semanas volví a sentirme segura. ¡Gracias!"</p>
-                <div class="testimonial-author">- María L.</div>
-            </div>
-            <div class="testimonial">
-                <p>"Intenté aprender con varios instructores y siempre abandonaba por los nervios. Pedro entendió mi situación y adapto las clases a mi ritmo. Ahora conduzco a diario."</p>
-                <div class="testimonial-author">- Carlos R.</div>
-            </div>
-            <div class="testimonial">
-                <p>"Instructor profesional, puntual y sobre todo muy humano. Si buscas alguien que te entienda y no te presione, Pedro es tu persona."</p>
-                <div class="testimonial-author">- Ana S.</div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <div class="contact" id="contacto">
-                <h2>¿Listo para empezar?</h2>
-                <p>Contáctame y agenda tu primera clase. Sin compromisos, hablemos de tus objetivos.</p>
-                <div class="contact-info">
-                    📞 <strong>Teléfono:</strong> [Tu número aquí]<br>
-                    📧 <strong>Email:</strong> [Tu email aquí]<br>
-                    📍 <strong>Zona:</strong> [Tu ciudad/zona aquí]
-                </div>
-                <a href="tel:+34XXXXXXXXX" class="contact-button">Llamar Ahora</a>
-            </div>
-        </div>
-    </div>
-    
-    <footer>
-        <p>&copy; 2026 Pedro - Instructor de Conducción | Ayudándote a conducir sin miedo</p>
-    </footer>
+
+<div class="hero">
+    <img src="Pedro-foto.jpg.JPG" class="profile" alt="Pedro Instructor">
+    <img src="titulo.jpg" class="banner" alt="Título">
+    <h1>Pedro – Instructor Titulado DGT</h1>
+    <p>Recupera la seguridad y confianza al volante</p>
+    <a href="#contacto" class="cta-button">Reservar Clases</a>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2>¿A quién va dirigido?</h2>
+<div class="card">
+<p>
+Servicio exclusivo para personas que poseen permiso de conducir en vigor y vehículo propio,
+pero que necesitan recuperar confianza, eliminar miedos o mejorar su seguridad al conducir.
+</p>
+
+<div class="highlight-box">
+✔ Carnet en vigor obligatorio<br>
+✔ Vehículo propio del alumno<br>
+✔ Ideal para quitar miedos y ganar seguridad real
+</div>
+</div>
+</div>
+
+
+<div class="section">
+<h2>Sobre Pedro</h2>
+<div class="card">
+<p>
+Con años de experiencia como instructor de conducción y profesor titulado por la Dirección General de Tráfico (DGT), 
+me especializo en ayudar a conductores que sienten miedo, inseguridad o bloqueo al volante.
+</p>
+
+<p style="margin-top:20px;">
+Trabajo con personas que ya poseen carnet pero necesitan recuperar confianza después de una mala experiencia 
+o largos periodos sin conducir.
+</p>
+
+<p style="margin-top:20px;">
+Mi método se basa en la paciencia, claridad y práctica en situaciones reales. 
+El objetivo no es solo conducir, sino conducir con seguridad y tranquilidad.
+</p>
+</div>
+</div>
+
+
+<div class="section">
+<h2>Cómo son las clases</h2>
+<div class="features">
+
+<div class="feature-card">
+<h3>📍 A Domicilio</h3>
+<p>Clases personalizadas en el entorno del alumno y sus recorridos habituales.</p>
+</div>
+
+<div class="feature-card">
+<h3>🚗 Con tu propio coche</h3>
+<p>Aprendes en tu vehículo para ganar confianza real en tu día a día.</p>
+</div>
+
+<div class="feature-card">
+<h3>🎯 Objetivos prácticos</h3>
+<p>Estacionamiento, adelantamientos, cambios de dirección y rotondas.</p>
+</div>
+
+<div class="feature-card">
+<h3>⏱ Clase efectiva</h3>
+<p>45 minutos reales de conducción.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="section">
+<h2>Lo que dicen mis alumnos</h2>
+
+<div class="testimonial">
+<p>"Tenía pánico a conducir después de un accidente. Pedro fue increíblemente paciente y en pocas semanas volví a sentirme segura."</p>
+<div class="testimonial-author">– María L.</div>
+</div>
+
+<div class="testimonial">
+<p>"Intenté aprender con varios instructores y siempre abandonaba por los nervios. Pedro adaptó las clases a mi ritmo. Ahora conduzco a diario."</p>
+<div class="testimonial-author">– Carlos R.</div>
+</div>
+
+<div class="testimonial">
+<p>"Profesional, puntual y muy humano. Si buscas recuperar confianza sin presión, es la persona indicada."</p>
+<div class="testimonial-author">– Ana S.</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>Tarifas</h2>
+<div class="price-box">
+<h3>30€</h3>
+<p>Por clase de 45 minutos</p>
+<p><strong>Mínimo 2 clases seguidas</strong></p>
+<p>Transporte del profesor incluido en el precio</p>
+</div>
+</div>
+
+
+<div class="section contact" id="contacto">
+<h2>Contacto</h2>
+<p>Agenda tus clases y empieza a conducir con seguridad.</p>
+
+<div class="contact-info">
+📞 <strong>639 167 489</strong><br>
+📧 <strong>ampuerodp@hotmail.com</strong>
+</div>
+
+<a href="tel:+34639167489" class="cta-button" style="margin-top:20px;">Llamar Ahora</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Pedro – Profesor Titulado por la Dirección General de Tráfico (DGT)
+</footer>
+
 </body>
 </html>
